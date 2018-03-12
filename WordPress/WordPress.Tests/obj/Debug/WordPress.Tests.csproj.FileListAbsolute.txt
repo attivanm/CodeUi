@@ -1,0 +1,7 @@
+C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\WordPress.Tests.dll
+C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\WordPress.Tests.pdb
+C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\autofundamental\CodeUi\WordPress\WordPress.Tests\obj\Debug\WordPress.Tests.csprojResolveAssemblyReference.cache
+C:\autofundamental\CodeUi\WordPress\WordPress.Tests\obj\Debug\WordPress.Tests.dll
+C:\autofundamental\CodeUi\WordPress\WordPress.Tests\obj\Debug\WordPress.Tests.pdb
