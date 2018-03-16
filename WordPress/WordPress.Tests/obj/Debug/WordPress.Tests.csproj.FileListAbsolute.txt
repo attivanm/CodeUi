@@ -1,12 +1,12 @@
+C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\Drivers\chromedriver.exe
 C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\WordPress.Tests.dll
 C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\WordPress.Tests.pdb
-C:\autofundamental\CodeUi\WordPress\WordPress.Tests\obj\Debug\WordPress.Tests.csprojResolveAssemblyReference.cache
-C:\autofundamental\CodeUi\WordPress\WordPress.Tests\obj\Debug\WordPress.Tests.dll
-C:\autofundamental\CodeUi\WordPress\WordPress.Tests\obj\Debug\WordPress.Tests.pdb
-C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\Drivers\chromedriver.exe
 C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\WordPress.Framework.dll
 C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\WebDriver.dll
 C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\WebDriver.Support.dll
 C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\WordPress.Framework.pdb
 C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\WebDriver.xml
 C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\WebDriver.Support.xml
+C:\autofundamental\CodeUi\WordPress\WordPress.Tests\obj\Debug\WordPress.Tests.csprojResolveAssemblyReference.cache
+C:\autofundamental\CodeUi\WordPress\WordPress.Tests\obj\Debug\WordPress.Tests.dll
+C:\autofundamental\CodeUi\WordPress\WordPress.Tests\obj\Debug\WordPress.Tests.pdb

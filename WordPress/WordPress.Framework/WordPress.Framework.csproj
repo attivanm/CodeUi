@@ -52,6 +52,10 @@
     <Compile Include="Browser\BrowserManager.cs" />
     <Compile Include="Browser\DriverManager.cs" />
     <Compile Include="Browser\SeleniumActions.cs" />
+    <Compile Include="Factories\PageFactory.cs" />
+    <Compile Include="Pages\DashboardPage.cs" />
+    <Compile Include="Pages\LoginPage.cs" />
+    <Compile Include="Pages\LoginPage2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

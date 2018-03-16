@@ -6,6 +6,5 @@ C:\autofundamental\CodeUi\WordPress\WordPress.Framework\bin\Debug\WebDriver.dll
 C:\autofundamental\CodeUi\WordPress\WordPress.Framework\bin\Debug\WebDriver.Support.dll
 C:\autofundamental\CodeUi\WordPress\WordPress.Framework\bin\Debug\WebDriver.xml
 C:\autofundamental\CodeUi\WordPress\WordPress.Framework\bin\Debug\WebDriver.Support.xml
-C:\autofundamental\CodeUi\WordPress\WordPress.Framework\obj\Debug\WordPress.Framework.csprojResolveAssemblyReference.cache
 C:\autofundamental\CodeUi\WordPress\WordPress.Framework\obj\Debug\WordPress.Framework.dll
 C:\autofundamental\CodeUi\WordPress\WordPress.Framework\obj\Debug\WordPress.Framework.pdb

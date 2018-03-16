@@ -1,6 +1,8 @@
-﻿using System;
+﻿
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordPress.Framework.Browser;
+using WordPress.Framework.Factories;
+using WordPress.Framework.Pages;
 
 namespace WordPress.Tests
 {
@@ -11,13 +13,34 @@ namespace WordPress.Tests
         [TestInitialize]
         public void Init() {
             BrowserManager.Instance.Init();
-            BrowserManager.Instance.GoTo();
+           
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void USer_Can_Loguin()
         {
-            
+            //Test Steps
+            LoginPage.GoTo();
+            LoginPage.LoginAs("Gonzalo")
+                      .WithPassword("Control123!")
+                      .Login();
+            //Validation
+            Assert.IsTrue(PageFactory<DashboardPage>.GetPage.IsAt, "Error, you are not in the DashBoardPage");
+        }
+
+        [TestMethod]
+        public void USer_Can_Loguin2()
+        {
+            //Test Steps
+          Assert.IsTrue(
+            PageFactory<LoginPage2>.GetPage
+                .GoTo()
+                .LoginAs("Gonzalo")
+                .WithPassword("Control123!")
+                .Login()
+                .DashboardPage
+                .IsAt
+                , "Error, you are not in the DashBoardPage");
         }
 
         [TestCleanup]
