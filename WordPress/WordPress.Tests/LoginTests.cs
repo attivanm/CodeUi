@@ -7,7 +7,7 @@ using WordPress.Framework.Pages;
 namespace WordPress.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class LoginTests
     {
 
         [TestInitialize]

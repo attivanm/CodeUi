@@ -10,3 +10,5 @@ C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\WebDriver.Support.
 C:\autofundamental\CodeUi\WordPress\WordPress.Tests\obj\Debug\WordPress.Tests.csprojResolveAssemblyReference.cache
 C:\autofundamental\CodeUi\WordPress\WordPress.Tests\obj\Debug\WordPress.Tests.dll
 C:\autofundamental\CodeUi\WordPress\WordPress.Tests\obj\Debug\WordPress.Tests.pdb
+C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\WordPress.Utilities.dll
+C:\autofundamental\CodeUi\WordPress\WordPress.Tests\bin\Debug\WordPress.Utilities.pdb

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordPress.Tests", "WordPres
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordPress.Framework", "WordPress.Framework\WordPress.Framework.csproj", "{FAFBDA2D-036C-4B15-9A5E-F07DC41CA7AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordPress.Utilities", "WordPress.Utilities\WordPress.Utilities.csproj", "{48915D9C-AC05-42A7-AED1-F84786A3757D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FAFBDA2D-036C-4B15-9A5E-F07DC41CA7AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAFBDA2D-036C-4B15-9A5E-F07DC41CA7AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAFBDA2D-036C-4B15-9A5E-F07DC41CA7AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48915D9C-AC05-42A7-AED1-F84786A3757D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48915D9C-AC05-42A7-AED1-F84786A3757D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48915D9C-AC05-42A7-AED1-F84786A3757D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48915D9C-AC05-42A7-AED1-F84786A3757D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
