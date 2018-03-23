@@ -1,6 +1,9 @@
 ﻿
 using OpenQA.Selenium;
 using WordPress.Framework.Browser;
+using WordPress.Framework.Controls;
+using WordPress.Framework.Engine;
+using WordPress.Framework.Factory;
 
 namespace WordPress.Framework.Pages
 {
@@ -31,14 +34,18 @@ namespace WordPress.Framework.Pages
         }
 
         public void Login() {
-            BrowserManager.Instance.Driver
-                .FindElement(By.Id("user_login")).SendKeys(UserName);
+           // BrowserManager.Instance.Driver
+           //     .FindElement(By.Id("user_login")).SendKeys(UserName);
+           ControlFactory.GetControl<TextFieldElement>(Locator.Id, "user_login", "User Login").SetValue(UserName);
+           
+            // BrowserManager.Instance.Driver
+            //     .FindElement(By.Id("user_pass")).SendKeys(UserName);
+           ControlFactory.GetControl<TextFieldElement>(Locator.Id, "user_pass", "User Password").SetValue(Password);
+            
+            // BrowserManager.Instance.Driver
+            //     .FindElement(By.Id("wp-submit")).Click();
+           ControlFactory.GetControl<ButtonElement>(Locator.Id, "wp-submit", "Submit").Click();
 
-            BrowserManager.Instance.Driver
-                .FindElement(By.Id("user_pass")).SendKeys(Password);
-
-            BrowserManager.Instance.Driver
-                .FindElement(By.Id("wp-submit")).Click();
 
         }
     }

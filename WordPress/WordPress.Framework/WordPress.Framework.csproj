@@ -52,6 +52,13 @@
     <Compile Include="Browser\BrowserManager.cs" />
     <Compile Include="Browser\DriverManager.cs" />
     <Compile Include="Browser\SeleniumActions.cs" />
+    <Compile Include="Controls\ButtonElement.cs" />
+    <Compile Include="Controls\SpanElement.cs" />
+    <Compile Include="Controls\TextFieldElement.cs" />
+    <Compile Include="Engine\Locator.cs" />
+    <Compile Include="Engine\WebElementBase.cs" />
+    <Compile Include="Engine\WebElementFinder.cs" />
+    <Compile Include="Factories\ControlFactory.cs" />
     <Compile Include="Factories\PageFactory.cs" />
     <Compile Include="Pages\AddNewPostPage.cs" />
     <Compile Include="Pages\DashboardPage.cs" />
