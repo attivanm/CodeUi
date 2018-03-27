@@ -2,13 +2,11 @@
 
 namespace WordPress.Framework.Factories
 {
-    public class PageFactory<T> where T : new()
+    public class PageFactory
     {
-        public static T GetPage {
-            get {
+        public static T GetPage<T>() where T: new() {
+          
                 return new T();
-            }
-
         }
     }
 }

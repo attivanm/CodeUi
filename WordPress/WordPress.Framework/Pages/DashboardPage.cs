@@ -1,8 +1,4 @@
-﻿
-
-using OpenQA.Selenium;
-using System.Collections.ObjectModel;
-using System.Linq;
+﻿using System.Linq;
 using WordPress.Framework.Controls;
 using WordPress.Framework.Engine;
 using WordPress.Framework.Factory;

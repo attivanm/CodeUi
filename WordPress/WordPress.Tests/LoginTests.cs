@@ -25,7 +25,7 @@ namespace WordPress.Tests
                       .WithPassword("Control123!")
                       .Login();
             //Validation
-            Assert.IsTrue(PageFactory<DashboardPage>.GetPage.IsAt, "Error, you are not in the DashBoardPage");
+            Assert.IsTrue(PageFactory.GetPage<DashboardPage>().IsAt, "Error, you are not in the DashBoardPage");
         }
 
         [TestMethod]
@@ -33,7 +33,7 @@ namespace WordPress.Tests
         {
             //Test Steps
           Assert.IsTrue(
-            PageFactory<LoginPage2>.GetPage
+            PageFactory.GetPage<LoginPage2>()
                 .GoTo()
                 .LoginAs("Gonzalo")
                 .WithPassword("Control123!")

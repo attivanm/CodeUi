@@ -24,27 +24,47 @@ namespace WordPress.Tests
             var title = StringManager.GenerateTitle();
             var body = StringManager.GenerateBody();
             //Test Steps
-            PageFactory<LoginPage2>.GetPage
+            PageFactory.GetPage<LoginPage2>()
                 .GoTo()
                 .LoginAs("Gonzalo")
                 .WithPassword("Control123!")
                 .Login();
             //create Post
-            PageFactory<AddNewPostPage>.GetPage
+            PageFactory.GetPage<AddNewPostPage>()
             
                 .GoTo()
                 .SetTittle(title)
                 .SetBody(body)
                 .Publish();
 
-            PageFactory<EditPostPage>.GetPage
+            PageFactory.GetPage<EditPostPage>()
                 .ViewPost(); // Option 2
 
             //validation
             //1
-            Assert.IsTrue(PageFactory<PostPage>.GetPage.ValidateTitle(title));
+            Assert.IsTrue(PageFactory.GetPage<PostPage>().ValidateTitle(title));
             //2.
-            PageFactory<PostPage>.GetPage.ValidateTitle2(title);
+            PageFactory.GetPage<PostPage>().ValidateTitle2(title);
+
+        }
+
+
+        [TestMethod]
+        public void Can_Search_Post()
+        {
+            //variables
+            var title = StringManager.GenerateTitle();
+            var body = StringManager.GenerateBody();
+            
+            // Precondition : create Post
+
+
+            //Test Steps
+            PageFactory.GetPage<AllPostsPage>()
+                .GoTo()
+                .SearchPost(title)
+                .DoesPostExistWithTitle(title)
+                ;
 
         }
 

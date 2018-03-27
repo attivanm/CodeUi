@@ -2,6 +2,7 @@
 
 using OpenQA.Selenium;
 using System.Collections.ObjectModel;
+using WordPress.Framework.Browser;
 
 namespace WordPress.Framework.Engine
 {
@@ -51,6 +52,15 @@ namespace WordPress.Framework.Engine
         public void Click() {
             WebElement.Click();
         }
+
+        public IWebElement MouseHover() {
+            return WebElement.MouseHover();
+        }
+
+        //GetText
+
+        //DrawHighLight
+
 
         private IWebElement _webElement;
 
