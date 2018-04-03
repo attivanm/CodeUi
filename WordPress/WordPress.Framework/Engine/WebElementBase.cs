@@ -3,6 +3,7 @@
 using OpenQA.Selenium;
 using System.Collections.ObjectModel;
 using WordPress.Framework.Browser;
+using WordPress.Logger;
 
 namespace WordPress.Framework.Engine
 {
@@ -51,6 +52,15 @@ namespace WordPress.Framework.Engine
 
         public void Click() {
             WebElement.Click();
+            //Log example 1
+            var message = $"The (Control)[{ControlName}] was clicked.";
+            LoggerManager.Instance.Information(message);
+
+            //log example 2
+            var message2 = $"The (Button)[{ControlName}] is displayed.";
+            //log example 3
+           // var message3 = $"The (TextField)[{ControlName}] contains the WORNG value: [{currentValue}], when it should contain  the expected value [{expectedValue}].";
+
         }
 
         public IWebElement MouseHover() {

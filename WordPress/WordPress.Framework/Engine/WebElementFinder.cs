@@ -2,6 +2,7 @@
 using System;
 using System.Collections.ObjectModel;
 using WordPress.Framework.Browser;
+using WordPress.Logger;
 
 namespace WordPress.Framework.Engine
 {
@@ -36,6 +37,7 @@ namespace WordPress.Framework.Engine
             else
             {
                 string message = $"The Control: {_controlName} was not found";
+                LoggerManager.Instance.Error(message);
                 throw new Exception(message);
             }
         }
@@ -51,6 +53,8 @@ namespace WordPress.Framework.Engine
             else
             {
                 string message = $"The Control: {_controlName} was not found";
+                //log
+                LoggerManager.Instance.Error(message);
                 throw new Exception(message);
             }
         }

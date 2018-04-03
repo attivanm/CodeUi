@@ -2,6 +2,7 @@
 using WordPress.Framework.Browser;
 using WordPress.Framework.Factories;
 using WordPress.Framework.Pages;
+using WordPress.Framework.RestCalls;
 using WordPress.Utilities;
 
 namespace WordPress.Tests
@@ -55,8 +56,16 @@ namespace WordPress.Tests
             //variables
             var title = StringManager.GenerateTitle();
             var body = StringManager.GenerateBody();
-            
+
             // Precondition : create Post
+            PostCalls.CreatePost(title, body);
+
+            //Test Steps
+            PageFactory.GetPage<LoginPage2>()
+                .GoTo()
+                .LoginAs("Gonzalo")
+                .WithPassword("Control123!")
+                .Login();
 
 
             //Test Steps
@@ -66,6 +75,44 @@ namespace WordPress.Tests
                 .DoesPostExistWithTitle(title)
                 ;
 
+        }
+
+
+        [TestMethod]
+        public void Can_Update_Post()
+        {
+            //variables
+            var title = StringManager.GenerateTitle();
+            var body = StringManager.GenerateBody();
+            //
+            var newTitle = StringManager.GenerateTitle();
+
+            // Precondition : create Post
+            PostCalls.CreatePost(title, body);
+
+            //Test Steps
+            PageFactory.GetPage<LoginPage2>()
+                .GoTo()
+                .LoginAs("Gonzalo")
+                .WithPassword("Control123!")
+                .Login();
+
+
+            //Test Steps
+            PageFactory.GetPage<AllPostsPage>()
+                .GoTo()
+                .SearchPost(title)
+                .SelectPostCreated(title)
+                .SetTittle(newTitle)
+                .Publish();
+                ;
+
+            //Verification
+            PageFactory.GetPage<AllPostsPage>()
+                .GoTo()
+                .SearchPost(title)
+                .DoesPostExistWithTitle(newTitle)
+                ;
         }
 
         [TestCleanup]

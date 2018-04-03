@@ -1,5 +1,4 @@
 C:\autofundamental\CodeUi\WordPress\WordPress.Utilities\bin\Debug\WordPress.Utilities.dll
 C:\autofundamental\CodeUi\WordPress\WordPress.Utilities\bin\Debug\WordPress.Utilities.pdb
-C:\autofundamental\CodeUi\WordPress\WordPress.Utilities\obj\Debug\WordPress.Utilities.csprojResolveAssemblyReference.cache
 C:\autofundamental\CodeUi\WordPress\WordPress.Utilities\obj\Debug\WordPress.Utilities.dll
 C:\autofundamental\CodeUi\WordPress\WordPress.Utilities\obj\Debug\WordPress.Utilities.pdb

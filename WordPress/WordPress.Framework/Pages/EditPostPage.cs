@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using WordPress.Framework.Browser;
 
-namespace WordPress.Framework.Pages
+namespace WordPress.Framework.Pages 
 {
-    public class EditPostPage
+    public class EditPostPage : BasePage 
     {
         public void ViewPost()
         {

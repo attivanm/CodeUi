@@ -3,14 +3,20 @@ using RestSharp.Authenticators;
 
 namespace WordPress.RestClient
 {
-    public class RestClientManager
+    public sealed class RestClientManager
     {
-        public string Create<T>(T objectToCreate) {
-            // Authenticate
+        private RestClientManager()
+        {
+
+        }
+
+        public string Create<T>(string type, T objectToCreate)
+        {
+            //Authenticate
             var client = Authenticate();
 
             //Request
-            var request = new RestRequest(Method.POST);
+            var request = new RestRequest(type, Method.POST);
             request.RequestFormat = DataFormat.Json;
             request.AddBody(objectToCreate);
 
@@ -23,8 +29,22 @@ namespace WordPress.RestClient
         {
             var client = new RestSharp
                 .RestClient("http://wpautomation.azurewebsites.net/wp-json/wp/v2/");
-            client.Authenticator = new HttpBasicAuthenticator("Gonzalo","Control123!");
+            client.Authenticator = new HttpBasicAuthenticator("Gonzalo", "Control123!");
             return client;
+        }
+
+        private static RestClientManager _instance;
+        public static RestClientManager Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new RestClientManager();
+                }
+
+                return _instance;
+            }
         }
     }
 }

@@ -1,0 +1,11 @@
+C:\autofundamental\CodeUi\WordPress\WordPress.Logger\bin\Debug\WordPress.Logger.dll
+C:\autofundamental\CodeUi\WordPress\WordPress.Logger\bin\Debug\WordPress.Logger.pdb
+C:\autofundamental\CodeUi\WordPress\WordPress.Logger\bin\Debug\Serilog.dll
+C:\autofundamental\CodeUi\WordPress\WordPress.Logger\bin\Debug\Serilog.Sinks.File.dll
+C:\autofundamental\CodeUi\WordPress\WordPress.Logger\bin\Debug\Serilog.Sinks.RollingFile.dll
+C:\autofundamental\CodeUi\WordPress\WordPress.Logger\bin\Debug\Serilog.xml
+C:\autofundamental\CodeUi\WordPress\WordPress.Logger\bin\Debug\Serilog.Sinks.File.xml
+C:\autofundamental\CodeUi\WordPress\WordPress.Logger\bin\Debug\Serilog.Sinks.RollingFile.xml
+C:\autofundamental\CodeUi\WordPress\WordPress.Logger\obj\Debug\WordPress.Logger.csprojResolveAssemblyReference.cache
+C:\autofundamental\CodeUi\WordPress\WordPress.Logger\obj\Debug\WordPress.Logger.dll
+C:\autofundamental\CodeUi\WordPress\WordPress.Logger\obj\Debug\WordPress.Logger.pdb
