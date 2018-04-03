@@ -41,10 +41,9 @@ namespace WordPress.Framework.Pages
 
         }
 
-        public EditPostPage SelectPostCreated(string title)
+        public void SelectPostCreated(string title)
         {
-            ControlFactory.GetControl<TextFieldElement>(Locator.ClassName, "row-title", "Search Posts").Click();
-            return new EditPostPage();
+            ControlFactory.GetControl<TextFieldElement>(Locator.ClassName, "row-title", "Search Posts").Click();  
         }
     }
 }

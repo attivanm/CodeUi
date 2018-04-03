@@ -8,15 +8,15 @@ using WordPress.Framework.Browser;
 
 namespace WordPress.Framework.Pages
 {
-    public class BasePage
+    public class BasePostPage
     {
-        public BasePage SetTittle(string title)
+        public BasePostPage SetTittle(string title)
         {
             BrowserManager.Instance.Driver.FindElement(By.Id("title")).SendKeys(title);
             return this;
         }
 
-        public BasePage SetBody(string body)
+        public BasePostPage SetBody(string body)
         {
             var iframe = BrowserManager.Instance.Driver.FindElement(By.Id("content_ifr"));
             BrowserManager.Instance.Driver.SwitchTo().Frame(iframe);

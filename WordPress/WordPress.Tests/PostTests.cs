@@ -103,11 +103,13 @@ namespace WordPress.Tests
                 .GoTo()
                 .SearchPost(title)
                 .SelectPostCreated(title)
+                ;
+            PageFactory.GetPage<EditPostPage>()
                 .SetTittle(newTitle)
                 .Publish();
                 ;
 
-            //Verification
+            //Verification Steps
             PageFactory.GetPage<AllPostsPage>()
                 .GoTo()
                 .SearchPost(title)

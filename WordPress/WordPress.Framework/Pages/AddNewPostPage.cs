@@ -8,7 +8,7 @@ using WordPress.Framework.Browser;
 
 namespace WordPress.Framework.Pages
 {
-    public class AddNewPostPage
+    public class AddNewPostPage : BasePostPage
     {
         public AddNewPostPage GoTo() {
             var element = BrowserManager.Instance.Driver.MouseHover(By.Id("menu-posts"));
@@ -16,28 +16,6 @@ namespace WordPress.Framework.Pages
             return this;
         }
 
-        public AddNewPostPage SetTittle(string title) {
-            BrowserManager.Instance.Driver.FindElement(By.Id("title")).SendKeys(title);
-            return this;
-        }
 
-        public AddNewPostPage SetBody(string body) {
-            var iframe = BrowserManager.Instance.Driver.FindElement(By.Id("content_ifr"));
-            BrowserManager.Instance.Driver.SwitchTo().Frame(iframe);
-            //Im in the FRAME o IFRAME
-            BrowserManager.Instance.Driver.SwitchTo().ActiveElement().SendKeys(body);
-            //.. more FindElement
-
-            //Switch DefaultContent
-            BrowserManager.Instance.Driver.SwitchTo().DefaultContent();
-            BrowserManager.Instance.Driver.Sleep();
-            return this;
-        }
-
-        public void Publish() {
-            var button = BrowserManager.Instance.Driver.FindElement(By.Id("publish"));
-            // cuando la clase cambia automaticamente su estado 
-            button.WaitForAttributeChange("class", "button button-primary button-large").Click();
-        }
     }
 }
