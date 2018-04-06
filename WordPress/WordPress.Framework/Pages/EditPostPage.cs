@@ -8,7 +8,7 @@ using WordPress.Framework.Browser;
 
 namespace WordPress.Framework.Pages 
 {
-    public class EditPostPage : BasePage 
+    public class EditPostPage : BasePostPage 
     {
         public void ViewPost()
         {

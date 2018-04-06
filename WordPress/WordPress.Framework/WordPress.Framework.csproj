@@ -64,7 +64,7 @@
     <Compile Include="Factories\PageFactory.cs" />
     <Compile Include="Pages\AddNewPostPage.cs" />
     <Compile Include="Pages\AllPostsPage.cs" />
-    <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\BasePostPage.cs" />
     <Compile Include="Pages\DashboardPage.cs" />
     <Compile Include="Pages\EditPostPage.cs" />
     <Compile Include="Pages\LoginPage.cs" />

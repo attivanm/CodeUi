@@ -3,19 +3,15 @@ using WordPress.Framework.Browser;
 using WordPress.Framework.Factories;
 using WordPress.Framework.Pages;
 using WordPress.Framework.RestCalls;
+using WordPress.Tests.Base;
 using WordPress.Utilities;
 
 namespace WordPress.Tests
 {
     [TestClass]
-    public class PostTests
+    public class PostTests : BaseTest
     {
-        [TestInitialize]
-        public void Init()
-        {
-            BrowserManager.Instance.Init();
 
-        }
 
         [TestMethod]
         public void Can_Create_Post()
@@ -25,14 +21,9 @@ namespace WordPress.Tests
             var title = StringManager.GenerateTitle();
             var body = StringManager.GenerateBody();
             //Test Steps
-            PageFactory.GetPage<LoginPage2>()
-                .GoTo()
-                .LoginAs("Gonzalo")
-                .WithPassword("Control123!")
-                .Login();
+ 
             //create Post
             PageFactory.GetPage<AddNewPostPage>()
-            
                 .GoTo()
                 .SetTittle(title)
                 .SetBody(body)
@@ -49,7 +40,6 @@ namespace WordPress.Tests
 
         }
 
-
         [TestMethod]
         public void Can_Search_Post()
         {
@@ -61,22 +51,12 @@ namespace WordPress.Tests
             PostCalls.CreatePost(title, body);
 
             //Test Steps
-            PageFactory.GetPage<LoginPage2>()
-                .GoTo()
-                .LoginAs("Gonzalo")
-                .WithPassword("Control123!")
-                .Login();
-
-
-            //Test Steps
             PageFactory.GetPage<AllPostsPage>()
                 .GoTo()
                 .SearchPost(title)
                 .DoesPostExistWithTitle(title)
                 ;
-
         }
-
 
         [TestMethod]
         public void Can_Update_Post()
@@ -91,14 +71,6 @@ namespace WordPress.Tests
             PostCalls.CreatePost(title, body);
 
             //Test Steps
-            PageFactory.GetPage<LoginPage2>()
-                .GoTo()
-                .LoginAs("Gonzalo")
-                .WithPassword("Control123!")
-                .Login();
-
-
-            //Test Steps
             PageFactory.GetPage<AllPostsPage>()
                 .GoTo()
                 .SearchPost(title)
@@ -110,17 +82,13 @@ namespace WordPress.Tests
                 ;
 
             //Verification Steps
-            PageFactory.GetPage<AllPostsPage>()
-                .GoTo()
-                .SearchPost(title)
-                .DoesPostExistWithTitle(newTitle)
-                ;
+            PageFactory.GetPage<EditPostPage>()
+                .ViewPost(); // Option 2
+
+            //Validation
+            PageFactory.GetPage<PostPage>().ValidateTitle2(title);
         }
 
-        [TestCleanup]
-        public void clean()
-        {
-            BrowserManager.Instance.Close();
-        }
+
     }
 }

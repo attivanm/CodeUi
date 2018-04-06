@@ -2,5 +2,6 @@ C:\autofundamental\CodeUi\WordPress\WordPress.RestClient\bin\Debug\WordPress.Res
 C:\autofundamental\CodeUi\WordPress\WordPress.RestClient\bin\Debug\WordPress.RestClient.pdb
 C:\autofundamental\CodeUi\WordPress\WordPress.RestClient\bin\Debug\RestSharp.dll
 C:\autofundamental\CodeUi\WordPress\WordPress.RestClient\bin\Debug\RestSharp.xml
+C:\autofundamental\CodeUi\WordPress\WordPress.RestClient\obj\Debug\WordPress.RestClient.csprojResolveAssemblyReference.cache
 C:\autofundamental\CodeUi\WordPress\WordPress.RestClient\obj\Debug\WordPress.RestClient.dll
 C:\autofundamental\CodeUi\WordPress\WordPress.RestClient\obj\Debug\WordPress.RestClient.pdb
